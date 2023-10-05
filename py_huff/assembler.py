@@ -1,4 +1,4 @@
-from .opcodes import Op, create_push, create_plain_op
+from opcodes import Op, create_push, create_plain_op
 from typing import NamedTuple
 
 

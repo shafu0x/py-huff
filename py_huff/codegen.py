@@ -1,8 +1,8 @@
 from typing import NamedTuple, Callable
-from .lexer import ExNode
-from .assembler import *
-from .parser import *
-from .opcodes import OP_MAP, Op
+from lexer import ExNode
+from assembler import *
+from parser import *
+from opcodes import OP_MAP, Op
 
 
 MacroArg = Op | MarkRef

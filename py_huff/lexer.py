@@ -1,6 +1,6 @@
 from parsimonious.grammar import Grammar
 from parsimonious.nodes import Node
-from .node import ExNode, Content
+from node import ExNode, Content
 
 
 HUFF_GRAMMAR = Grammar(

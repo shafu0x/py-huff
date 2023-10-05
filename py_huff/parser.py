@@ -1,6 +1,6 @@
 from typing import NamedTuple, Generator
-from .node import ExNode, Content
-from .opcodes import Op, OP_MAP, create_plain_op, create_push
+from node import ExNode, Content
+from opcodes import Op, OP_MAP, create_plain_op, create_push
 
 Identifier = str
 MacroParam = NamedTuple('MacroParam', [('ident', Identifier)])

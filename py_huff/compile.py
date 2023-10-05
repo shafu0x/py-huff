@@ -1,13 +1,13 @@
 from typing import NamedTuple
-from .opcodes import Op
-from .lexer import lex_huff
-from .node import ExNode
-from .parser import (
+from opcodes import Op
+from lexer import lex_huff
+from node import ExNode
+from parser import (
     Identifier, CodeTable, Macro, get_ident, parse_hex_literal,
     get_defs, bytes_to_push, parse_macro
 )
-from .codegen import GlobalScope, expand_macro_to_asm, START_SUB_ID, END_SUB_ID
-from .assembler import asm_to_bytecode, Mark, minimal_deploy
+from codegen import GlobalScope, expand_macro_to_asm, START_SUB_ID, END_SUB_ID
+from assembler import asm_to_bytecode, Mark, minimal_deploy
 
 CompileResult = NamedTuple(
     'CompileResult',
